@@ -2,8 +2,6 @@
 
 Projeto full stack com CRUD completo de funcionários, feito com **Node.js, PostgreSQL, Prisma e React**. Desenvolvido para demonstrar habilidades completas em desenvolvimento web — desde o backend com API REST até a interface moderna no frontend.
 
----
-
 ## 🧰 Tecnologias Utilizadas
 
 ### Backend:
@@ -25,8 +23,6 @@ Projeto full stack com CRUD completo de funcionários, feito com **Node.js, Post
 - [Railway](https://railway.app/) ou [Render](https://render.com/) (Backend)
 - [Vercel](https://vercel.com/) ou [Netlify](https://www.netlify.com/) (Frontend)
 
----
-
 ## 🚀 Funcionalidades
 
 - Cadastro de usuários com:
@@ -41,8 +37,6 @@ Projeto full stack com CRUD completo de funcionários, feito com **Node.js, Post
 - Validações básicas e tratamento de erros
 - Integração com banco relacional PostgreSQL
 - Testes via Thunder Client / Insomnia
-
----
 
 ## 📂 Estrutura do Projeto
 
@@ -64,33 +58,33 @@ Projeto full stack com CRUD completo de funcionários, feito com **Node.js, Post
 
 ## ▶️ Como rodar localmente
 
-# 1. Clone o repositório
+### 1. Clone o repositório
 
 ```bash
 git clone https://github.com/silvamaarcus/cadastro-funcionarios.git
 ```
 
-# 2. Acesse o backend
+### 2. Acesse o backend
 
 ```bash
 cd backend
 ```
 
-# 3. Instale as dependências
+### 3. Instale as dependências
 
 ```bash
 npm install
 ```
 
-# 4. Configure o .env com sua DATABASE_URL do Neon
+### 4. Configure o .env com sua DATABASE_URL do Neon
 
-# 5. Rode as migrações
+### 5. Rode as migrações
 
 ```bash
 npx prisma migrate dev
 ```
 
-# 6. Inicie o servidor
+### 6. Inicie o servidor
 
 ```bash
 npm run dev
@@ -98,7 +92,7 @@ npm run dev
 
 ## ▶️ Como rodar localmente (Frontend)
 
-# 1. Acesse o frontend
+### 1. Acesse o frontend
 
 ```bash
 cd frontend
@@ -114,7 +108,6 @@ Você pode testar as rotas da API com ferramentas como:
 - Insomnia
 - Postman
 
----
-
 ## 📫 Contato
+
 Desenvolvido por [Marcus Silva](https://github.com/silvamaarcus)
