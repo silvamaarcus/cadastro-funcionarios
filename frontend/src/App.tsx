@@ -3,7 +3,6 @@ import { UseForm } from './components/UseForm';
 import { UserList} from './components/UserList';
 import { User } from './types/User';
 
-
 const API_URL = 'https://cadastro-funcionarios-production.up.railway.app/users';
 
 function App() {
