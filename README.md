@@ -18,7 +18,7 @@ Projeto full stack com CRUD completo de funcionários, feito com **Node.js, Post
 
 - [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
 - [Axios](https://axios-http.com/)
-- [Tailwind CSS](https://tailwindcss.com/) _(opcional)_
+- [Tailwind CSS](https://tailwindcss.com/)
 
 ### Deploy:
 
@@ -61,3 +61,60 @@ Projeto full stack com CRUD completo de funcionários, feito com **Node.js, Post
 
 📦 frontend/
 ```
+
+## ▶️ Como rodar localmente
+
+# 1. Clone o repositório
+
+```bash
+git clone https://github.com/silvamaarcus/cadastro-funcionarios.git
+```
+
+# 2. Acesse o backend
+
+```bash
+cd backend
+```
+
+# 3. Instale as dependências
+
+```bash
+npm install
+```
+
+# 4. Configure o .env com sua DATABASE_URL do Neon
+
+# 5. Rode as migrações
+
+```bash
+npx prisma migrate dev
+```
+
+# 6. Inicie o servidor
+
+```bash
+npm run dev
+```
+
+## ▶️ Como rodar localmente (Frontend)
+
+# 1. Acesse o frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+## 🌐 Teste com Thunder Client / Insomnia
+
+Você pode testar as rotas da API com ferramentas como:
+
+- Thunder Client (VS Code)
+- Insomnia
+- Postman
+
+---
+
+## 📫 Contato
+Desenvolvido por [Marcus Silva](https://github.com/silvamaarcus)
