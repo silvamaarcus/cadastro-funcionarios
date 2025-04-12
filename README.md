@@ -20,8 +20,8 @@ Projeto full stack com CRUD completo de funcionários, feito com **Node.js, Post
 
 ### Deploy:
 
-- [Railway](https://railway.app/) ou [Render](https://render.com/) (Backend)
-- [Vercel](https://vercel.com/) ou [Netlify](https://www.netlify.com/) (Frontend)
+- [Railway](https://cadastro-funcionarios-production.up.railway.app/) (Backend)
+- [Netlify](https://cadastro-funcionarios.netlify.app/) (Frontend)
 
 ## 🚀 Funcionalidades
 
