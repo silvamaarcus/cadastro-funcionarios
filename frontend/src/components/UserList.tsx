@@ -1,3 +1,4 @@
+import { Pencil, Trash } from "lucide-react";
 import { User } from "../types/User";
 
 export interface UserListProps {
@@ -11,9 +12,9 @@ export const UserList = ({ users, onEdit, onDelete }: UserListProps) => {
     <div className="mt-6">
       <h2 className="text-xl font-semibold mb-4">Funcionários cadastrados</h2>
       <div className="overflow-x-auto">
-        <table className="min-w-full bg-white rounded shadow">
+        <table className="min-w-full bg-dark border border-gray-600 shadow">
           <thead>
-            <tr className="bg-gray-100 text-left">
+            <tr className="text-left">
               <th className="py-2 px-4">Nome</th>
               <th className="py-2 px-4">Email</th>
               <th className="py-2 px-4">Status</th>
@@ -22,32 +23,32 @@ export const UserList = ({ users, onEdit, onDelete }: UserListProps) => {
           </thead>
           <tbody>
             {users.map((user) => (
-              <tr key={user.id} className="border-t hover:bg-gray-50">
+              <tr key={user.id} className="border-t border-gray-600 hover:bg-dark-light">
                 <td className="py-2 px-4">{user.name}</td>
                 <td className="py-2 px-4">{user.email}</td>
                 <td className="py-2 px-4">
                   <span
                     className={`px-2 py-1 rounded text-sm ${
                       user.status === 'ATIVO'
-                        ? 'bg-green-100 text-green-700'
-                        : 'bg-red-100 text-red-700'
+                        ? 'bg-teal-900 text-teal-100'
+                        : 'bg-red-900 text-red-100'
                     }`}
                   >
                     {user.status}
                   </span>
                 </td>
-                <td className="py-2 px-4 space-x-2">
+                <td className="py-2 px-4 space-x-4">
                   <button
                     onClick={() => onEdit(user)}
-                    className="text-blue-600 hover:underline"
+                    className="cursor-pointer hover:text-blue-500"
                   >
-                    Editar
+                    <Pencil size={16} />
                   </button>
                   <button
                     onClick={() => onDelete(user.id!)}
-                    className="text-red-600 hover:underline"
+                    className="cursor-pointer hover:text-red-500"
                   >
-                    Deletar
+                    <Trash size={16} />
                   </button>
                 </td>
               </tr>

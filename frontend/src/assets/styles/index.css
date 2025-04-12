@@ -5,8 +5,18 @@
   line-height: 1.5;
   font-weight: 400;
 
+  background-color: var(--color-dark);
+  color: var(--color-white);
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@theme {
+  --color-dark: #2C2638;
+  --color-dark-light: #3C364C;
+  --color-white: #FFFEFF;
+  --color-primary: #6D54B5;
 }

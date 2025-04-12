@@ -32,14 +32,14 @@ export const UseForm = ({ onSubmit, initialData, isEditing }: UseFormProps) => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="space-y-4 p-4 bg-white rounded shadow-md">
+      <form onSubmit={handleSubmit} className="space-y-4 p-4 bg-dark rounded shadow border border-gray-600">
       <input
         type="text"
         name="name"
         placeholder="Nome"
         value={form.name}
         onChange={handleChange}
-        className="w-full p-2 border rounded"
+        className="w-full p-2 bg-dark-light rounded focus:outline-none "
         required
       />
       <input
@@ -48,21 +48,21 @@ export const UseForm = ({ onSubmit, initialData, isEditing }: UseFormProps) => {
         placeholder="E-mail"
         value={form.email}
         onChange={handleChange}
-        className="w-full p-2 border rounded"
+        className="w-full p-2 bg-dark-light rounded focus:outline-none "
         required
       />
       <select
         name="status"
         value={form.status}
         onChange={handleChange}
-        className="w-full p-2 border rounded"
+        className="w-full p-2 bg-dark-light rounded focus:outline-none "
       >
         <option value="ativo">Ativo</option>
         <option value="inativo">Inativo</option>
       </select>
       <button
         type="submit"
-        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+        className="bg-primary text-white px-4 py-2 rounded hover:opacity-70 cursor-pointer"
       >
         {isEditing ? 'Atualizar' : 'Cadastrar'}
       </button>
